@@ -1,6 +1,6 @@
 # RepoGuard
 
-RepoGuard is a lightweight static analysis tool that scans GitHub repositories for **common security risks such as leaked secrets, unsafe configuration files, and vulnerable dependencies.
+RepoGuard is a lightweight static analysis tool that scans GitHub repositories for **common security risks** such as leaked secrets, unsafe configuration files, and vulnerable dependencies.
 
 It is designed to be:
 - **Fast** (runs in seconds)
@@ -84,8 +84,14 @@ pip install pip-audit
 
 Scan a public GitHub repository:
 
+For CLI output:
 ```bash
 repoguard scan https://github.com/user/repo
+```
+
+For saved JSON output:
+```bash
+repoguard scan https://github.com/user/repo --json repoguard_report.json
 ```
 
 ## Limitations
