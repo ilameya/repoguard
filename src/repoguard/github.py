@@ -31,10 +31,6 @@ def fetch_repo_meta(owner: str, repo: str) -> RepoMeta:
     )
 
 def download_repo_zip(owner: str, repo: str, branch: str, dest_dir: Path) -> Path:
-    """
-    Downloads the repo zipball and extracts it into dest_dir.
-    Returns the extracted root folder.
-    """
     url = f"{GITHUB_API}/repos/{owner}/{repo}/zipball/{branch}"
     resp = _get(url)
     z = zipfile.ZipFile(io.BytesIO(resp.content))
