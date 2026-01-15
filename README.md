@@ -67,7 +67,7 @@ Key design principles:
 Clone the repository and install in editable mode:
 
 ```bash
-git clone https://github.com/ilameya/repoguard.git
+git clone https://github.com/ilameya/RepoGuard.git
 cd repoguard
 python -m venv .venv
 source .venv/bin/activate
